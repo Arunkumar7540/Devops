@@ -11,6 +11,7 @@ namespace WebApplication.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
+
     {
         [TestMethod]
         public void Index()
@@ -50,5 +51,7 @@ namespace WebApplication.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+
     }
 }
