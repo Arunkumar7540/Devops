@@ -27,6 +27,19 @@ namespace WebApplication.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        [TestMethod]
+        public void Login()
+        {
+            // Arrange
+            AccountController controller = new AccountController();
+
+            // Act
+            ViewResult result = controller.Login(string.Empty) as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
     }
 
 }
