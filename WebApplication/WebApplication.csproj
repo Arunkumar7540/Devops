@@ -254,12 +254,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <None Include="Web.INT.config">
+    <Content Include="Web.INT.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.QA.config">
+    </Content>
+    <Content Include="Web.QA.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
