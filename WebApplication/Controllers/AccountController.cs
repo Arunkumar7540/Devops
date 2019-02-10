@@ -22,7 +22,7 @@ namespace WebApplication.Controllers
         {
         }
 
-
+        //Account Controller
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
