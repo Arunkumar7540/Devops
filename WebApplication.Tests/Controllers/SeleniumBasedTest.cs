@@ -58,7 +58,7 @@ namespace WebApplication.Tests.Controllers
             public void SetupTest()
             {
                 //appURL = "";
-                appURL = "https://webapplication-qa.azurewebsites.net/";
+                appURL = "https://webapplication-dev.azurewebsites.net/";
 
                 string browser = "Chrome";
                 switch (browser)
