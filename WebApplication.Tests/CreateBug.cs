@@ -51,7 +51,7 @@ namespace WebApplication.Tests
                 {
                     Operation = Operation.Add,
                     Path = "/fields/System.Title",
-                    Value = "Authorization Errors"
+                    Value = "Registration Errors"
                 }
             );
 
@@ -60,7 +60,7 @@ namespace WebApplication.Tests
                 {
                     Operation = Operation.Add,
                     Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
-                    Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http:// msdn.microsoft.com/library/live/hh826547.aspx"
+                    Value = "Registration Page Email Validation Failed x"
                 }
             );
 
@@ -81,6 +81,15 @@ namespace WebApplication.Tests
                     Value = "2 - High"
                 }
             );
+            patchDocument.Add(
+                new JsonPatchOperation()
+                {
+                    Operation = Operation.Add,
+                    Path = "/fields/System.IterationPath",
+                    Value = "DevopsHackathon\\Sprint 1"
+                }
+            );
+
             VssConnection connection = new VssConnection(uri, credentials);
             WorkItemTrackingHttpClient workItemTrackingHttpClient = connection.GetClient<WorkItemTrackingHttpClient>();
 

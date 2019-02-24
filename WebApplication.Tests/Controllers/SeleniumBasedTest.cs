@@ -30,6 +30,12 @@ namespace WebApplication.Tests.Controllers
                 driver.FindElement(By.Id("Password")).SendKeys("");               
                 driver.FindElement(By.Id("Register")).Click();
                 Assert.IsTrue(driver.FindElement(By.XPath("//li[(text())]")).Text.Contains("Email field is required"));
+                if(!driver.FindElement(By.XPath("//li[(text())]")).Text.Contains("Email field is required"))
+                {
+                    CreateBug obj = new CreateBug();
+                    obj.CreateBugUsingClientLib();
+
+                }
             }
 
             /// <summary>
