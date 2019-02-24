@@ -55,32 +55,32 @@ namespace WebApplication.Tests
                 }
             );
 
-            patchDocument.Add(
-                new JsonPatchOperation()
-                {
-                    Operation = Operation.Add,
-                    Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
-                    Value = "Registration Page Email Validation Failed x"
-                }
-            );
+            //patchDocument.Add(
+            //    new JsonPatchOperation()
+            //    {
+            //        Operation = Operation.Add,
+            //        Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
+            //        Value = "Registration Page Email Validation Failed"
+            //    }
+            //);
 
-            patchDocument.Add(
-                new JsonPatchOperation()
-                {
-                    Operation = Operation.Add,
-                    Path = "/fields/Microsoft.VSTS.Common.Priority",
-                    Value = "1"
-                }
-            );
+            //patchDocument.Add(
+            //    new JsonPatchOperation()
+            //    {
+            //        Operation = Operation.Add,
+            //        Path = "/fields/Microsoft.VSTS.Common.Priority",
+            //        Value = "1"
+            //    }
+            //);
 
-            patchDocument.Add(
-                new JsonPatchOperation()
-                {
-                    Operation = Operation.Add,
-                    Path = "/fields/Microsoft.VSTS.Common.Severity",
-                    Value = "2 - High"
-                }
-            );
+            //patchDocument.Add(
+            //    new JsonPatchOperation()
+            //    {
+            //        Operation = Operation.Add,
+            //        Path = "/fields/Microsoft.VSTS.Common.Severity",
+            //        Value = "2 - High"
+            //    }
+            //);
             patchDocument.Add(
                 new JsonPatchOperation()
                 {
